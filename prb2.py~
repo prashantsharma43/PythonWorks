@@ -1,0 +1,8 @@
+def fib(start):
+    if (start==0 or start ==1):
+        return start
+    else:
+        return fib(start-1)+fib(start-2)
+        
+print fib(40)
+
