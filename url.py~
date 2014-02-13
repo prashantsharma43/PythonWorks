@@ -1,0 +1,14 @@
+import urllib2
+from urllib2 import *
+import json
+
+url = 'http://google.com'
+
+kitten = urllib2.urlopen(url).read()
+
+f = open('kitten.jpeg','w')
+f.write(kitten)
+f.close()
+
+f = open('kitten.jpeg','w')
+

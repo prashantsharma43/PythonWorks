@@ -1,4 +1,38 @@
-count = 10**6
-nums=[]
-for i in range(count):
-    nums.insert(0,i)
+from sys import argv
+
+script, filename = argv
+
+print "We're going to erase %r." % filename
+print "If you don't want that, hit CTRL-C (^C)."
+print "If you do want that, hit RETURN."
+
+with open(filename) as f:
+    
+    content = f.readlines()
+
+compare= content
+flag=0
+    
+for i in content:
+    flag+=1
+    
+
+
+def uniq(input):
+  output = []
+  for x in input:
+    if x not in output:
+      output.append(x)
+  return output
+  
+  
+print uniq(content)
+
+        
+
+
+print flag
+
+
+
+
